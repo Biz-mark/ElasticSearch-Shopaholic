@@ -1,0 +1,9 @@
+{
+    "name": "bizmark/elasticsearchshopaholic-plugin",
+    "type": "october-plugin",
+    "description": "None",
+    "require": {
+        "composer/installers": "~1.0",
+        "elasticsearch/elasticsearch": "*"
+    }
+}
