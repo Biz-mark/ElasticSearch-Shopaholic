@@ -112,8 +112,8 @@ class ExtendFieldHandler
     {
         $obWidget->addTabFields([
             'search_synonym' => [
-                'label' => 'Синонимы для поиска',
-                'tab'   => 'Поисковый контент',
+                'label' => 'bizmark.elasticsearchshopaholic::lang.fields.search_synonym.label',
+                'tab'   => 'bizmark.elasticsearchshopaholic::lang.tabs.search',
                 'span'  => 'full',
                 'type'  => 'textarea',
             ],

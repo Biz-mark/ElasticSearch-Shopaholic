@@ -31,9 +31,9 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'ElasticSearchShopaholic',
-            'description' => 'Плагин поиска для Shopaholic на основе ElasticSearch',
-            'author'      => 'BizMark',
+            'name'        => 'bizmark.elasticsearchshopaholic::lang.plugins.name',
+            'description' => 'bizmark.elasticsearchshopaholic::lang.plugins.description',
+            'author'      => 'Biz-Mark, Nick Khaetsky',
             'icon'        => 'icon-leaf'
         ];
     }
