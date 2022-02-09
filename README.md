@@ -10,9 +10,9 @@ php artisan plugin:install BizMark.ElasticSearchShopaholic
 
 ### Indexing
 
-Every timw you save Product, Caregory, Brand or Tag model, new data will be pushed to ElasticSearch.
+Every time you save Product, Caregory, Brand or Tag model, new data will be pushed to ElasticSearch.
 
-Id you want to reindex your existing data, just call this arrisan command:
+If you want to reindex your existing data, just call this artisan command:
 
 ```
 pho arartisan shopaholic:elastic.reindex
