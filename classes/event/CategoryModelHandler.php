@@ -24,9 +24,26 @@ class CategoryModelHandler extends AbstractSearchModelHandler
         CategoryCollection::extend(function ($obCollection) {
             /** @var CategoryCollection $obCollection */
             $obCollection->addDynamicMethod('search', function ($sSearch) use ($obCollection) {
-//                $obSearchHelper = app(SearchHelper::class, ['product']);
-//                $arElementIDList = $obSearchHelper->result($sSearch);
-//                return $obCollection->applySorting($arElementIDList);
+                $arResult = $this->obElasticSearch->search([
+                    'index' => config('bizmark.elasticsearchshopaholic::'.$this->sSearchModel.'.index'),
+                    'type' => config('bizmark.elasticsearchshopaholic::'.$this->sSearchModel.'.type'),
+                    'body' => [
+                        '_source' => false,
+                        'query' => [
+                            'query_string' => [
+                                'query' => '*'.$sSearch.'*',
+                            ],
+                        ]
+                    ]
+                ]);
+
+                if (empty($arResult)) {
+                    return $obCollection;
+                }
+
+                $arElementIDList = $this->retrieveIds($arResult);
+
+                return $obCollection->applySorting($arElementIDList);
             });
         });
     }
