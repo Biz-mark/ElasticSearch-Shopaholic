@@ -15,7 +15,7 @@ Every time you save Product, Category, Brand or Tag model, new data will be push
 If you want to reindex your existing data, just call this artisan command:
 
 ```
-phзp artisan shopaholic:elastic.reindex
+php artisan shopaholic:elastic.reindex
 ```
 
 ### Using 
