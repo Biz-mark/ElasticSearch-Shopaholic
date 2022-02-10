@@ -4,8 +4,15 @@ This plugin allows you to use ElasticSearch as search engine for Shopaholic.
 
 ### Installation
 
+Install plugin from marketplace:
 ```
 php artisan plugin:install BizMark.ElasticSearchShopaholic
+```
+
+Add ElasticSearch hosts parameter to your .env
+
+```
+ELASTICSEARCH_HOSTS=127.0.0.1
 ```
 
 ### Indexing
