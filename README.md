@@ -6,10 +6,6 @@ This plugin allows you to use ElasticSearch as search engine for Shopaholic.
 - Easy to install, easy to use
 - Opened to your new ideas and features as contributions.
 
-### Contributing
-
-Check out plugin [repository](https://github.com/Biz-mark/ElasticSearch-Shopaholic).
-
 ### Installation
 
 Install plugin from marketplace:
