@@ -38,6 +38,6 @@ $obProductCollection = ProductCollection::make()->active()->search('term');
 ```
 
 ---
-© 2022, Biz-Mark under Commercial License.
+© 2022, Biz-Mark under MIT License.
 
 Developed by Nick Khaetsky at Biz-Mark.
